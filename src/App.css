@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  background-image: url(background.jpeg);
+}
+*{
+  box-sizing: border-box;
+}
+.body{
+  height: 779px;
+  background-image: url(background.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+body p{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #121e52;
+  text-transform: uppercase;
+  animation: flip 4s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+#form h2{
+  color: rgb(25, 52, 133);
+}
+
+#form{
+  padding-top: 30px;
+  height: 400px;
+  width:350px;
+  border:2px solid black;
+  text-align: center;
+  margin-left: 550px;
+  background-color: rgb(185, 223, 233);
+  float: none;
+}
+label{
+  color: rgb(48, 65, 156);
+  font-size: large;
+  gap: 50px;
+  margin-top: 20px;
+  
+}
+button{
+  border-radius: 60px;
+  font-size:medium;
+
+}
+table{
+  border: 2px solid black;
+  text-align: center;
+  margin-left: 450px;
+  width: 500px;
+}
+table th{
+  border: 1px solid black;
+  color: aqua;
+  background-color: rgb(29, 44, 85);
+  font-weight: bold;
+  align-items: center;
+}
+table td{
+  border: 1px solid black;
+  color: aliceblue;
+}
